@@ -1,0 +1,19 @@
+from setuptools import setup
+
+setup(name='AECT',
+      version='0.9',
+      description='Nucleosome FootPrint Autoencoder based on cell-free DNA',
+      packages=['ae'],
+      scripts=['AECT.py'],
+
+      author='Han Bowei',
+      author_email='hanbw0120@foxmail.com',
+      url='https://github.com/hanbw0120/AECT', 
+
+      install_requires=['numpy>=1.7',
+                        'keras>=2.0.8',
+                        'pandas',
+                        'tensorflow==1.14.0'
+                        ],
+      python_requires='>3.6.0',
+     )
