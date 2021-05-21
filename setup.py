@@ -13,7 +13,7 @@ setup(name='AECT',
       install_requires=['numpy>=1.7',
                         'keras>=2.0.8',
                         'pandas',
-                        'tensorflow==1.14.0'
+                        'tensorflow==2.5.0'
                         ],
       python_requires='>3.6.0',
      )
