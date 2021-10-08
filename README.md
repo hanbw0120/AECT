@@ -37,7 +37,7 @@ change iterations by watching the convergence of loss, default is 30000: [-i] or
 * a Docker file was upload to: [改]
 * load the Docker file by: gunzip -c AECT_v0.9.tar.gz | docker load
 * docker run --ipc=host -v "/PATH/TO/DATA/":"/PATH/TO/DATA/" aect:v0.9 \
-* AECT.py -i /PATH/TO/DATA/example/example_data.csv -o out.csv
+	AECT.py -i /PATH/TO/DATA/example/example_data.csv -o out.csv
 
 ## Other Scripts
 
