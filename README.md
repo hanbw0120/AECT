@@ -23,7 +23,7 @@ AECT.py -i <input_data> -f [file_type] -o [output_data]
 #### Input
 * a matrix file in either csv (default) or tab-seperated format
 * row is TSS, and column is sample
-* an example data is provided in "example" dir
+* an example data is provided in [改]
 
 #### Other options  
 * size of the hidden layers, separated with commas, default is 128,64,32,64,128: [--hidden_size]
@@ -32,6 +32,12 @@ AECT.py -i <input_data> -f [file_type] -o [output_data]
 change iterations by watching the convergence of loss, default is 30000: [-i] or [--max_iter]  
 * reduces learning rate if validation loss does not improve in a given number of epochs, default is 10: [--reduce_lr]
 * stops training if validation loss does not improve in a given number of epochs, default is 15: [--early_stop]
+
+#### Run use Docker image
+* a Docker file was upload to: [改]
+* load the Docker file by: gunzip -c AECT_v0.9.tar.gz | docker load
+* docker run --ipc=host -v "/PATH/TO/DATA/":"/PATH/TO/DATA/" aect:v0.9 \
+* AECT.py -i /PATH/TO/DATA/example/example_data.csv -o out.csv
 
 ## Other Scripts
 
